@@ -1,0 +1,32 @@
+{
+  "name": "ng_login",
+  "version": "1.0.0",
+  "description": "HSM MEAN app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "dependencies":{
+    "express": "*",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "compression": "*",
+    "cookie-parser": "*",
+    "dotenv": "*",
+    "express-session": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-google-oauth": "*",
+    "passport-local": "*",
+    "passport-twitter": "*",
+    "mysql": "*",
+    "sequelize": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Reza Neghabi",
+  "license": "ISC"
+}
