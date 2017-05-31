@@ -52,13 +52,13 @@ require('./config/passport.js')(passport, models.user, models.auth_user);
 
 // importing routes and passing passport as auth.js need it
 const authRoute = require('./routes/routes.js')(app, passport, models.user);
-// app.use('/users', authRoute);  // I might change this line after!!!!!!!!!!!!!!
 
 
-// // redirect all other routes:
-// app.get('*', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'public/index.html'));
-// })
+// redirect all other routes:
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public/index.html'));
+})
+
 // statring server
 app.listen(port, (err) => {
 	if(!err)
